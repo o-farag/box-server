@@ -11,11 +11,11 @@ ADD . /app
 ## We specify that we now wish to execute 
 ## any further commands inside our /app
 ## directory
-WORKDIR /app
+WORKDIR /app/src
 RUN go mod download
 ## we run go build to compile the binary
 ## executable of our Go program
-RUN go build -o main .
+RUN go build -o ../bin/box-server .
 ## Our start command which kicks off
 ## our newly created binary executable
-CMD ["/app/main"]
+CMD ["/app/bin/box-server"]
