@@ -13,4 +13,4 @@ build:
 	cd ./src && go build -o ../bin/box-server
 
 run-image:
-	docker run -p 1234:8080 ofarag/box-server:latest
+	docker run -p 8080:8080 ofarag/box-server:latest
