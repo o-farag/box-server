@@ -7,7 +7,7 @@ This repo contains everything required to develop, build and deploy the authorit
 ### Lobby Manager
 The lobby manager handles the lifecyle of game lobbies. It also handles client ingress. The first point of contact of a client is the Lobby Manager. When the client creates a new lobby, the lobby manager assigns a game lobby from a pool of game lobbies and redirects the client to the newly assigned game lobby. When a game lobby is no longer in use, the lobby manager either destroys or adds the lobby back to the pool of game lobbies. The Lobby Manager is also responsible to ensure that there are enough lobbies in the pool so that clients can quickly get a game lobby.
 ### Game Lobby
-The Game Lobby handles the lifecyle of games. After a client gets redirected to a lobby (or joins via a code), the game lobby is responsible for handling and broadcasting the state of the game.
+
 ### Client
 The client is the interface with which a player interacts with the game and server. Its main responsiblity is to send player requests to the server and receive responses. The player can request a game lobby via the client, or can connect to a lobby immediately if they have a code.
 
